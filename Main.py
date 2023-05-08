@@ -1,0 +1,22 @@
+from Ventana import Ventana
+
+if __name__ == '__main__':
+    print('==== Ventana Inicio ====')
+    V = Ventana("Inicio")
+    V.mostar()
+    print(f"Ventana: {V.gettitulo()} Alto: {V.alto} Ancho: {V.ancho}")
+    print('==== Ventana Cargar ====')
+    VCargar = Ventana('Cargar', 10, 20)
+    VCargar.mostar()
+    print('*** Mueve a la derecha ***')
+    VCargar.moverderecha(10)
+    VCargar.mostar()
+    print('*** Mueve a la izquierda ***')
+    VCargar.moverizquierda(10)
+    VCargar.mostar()
+    print('*** Bajar ***')
+    VCargar.bajar(10)
+    VCargar.mostar()
+    print('==== Ventana Borrar ====')
+    VBorrar = Ventana('Borrar', 10, 20, 100, 200)
+    VBorrar.mostar()
